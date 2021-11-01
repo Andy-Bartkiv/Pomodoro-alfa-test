@@ -1,0 +1,103 @@
+                  /* Animations */
+
+@keyframes ballDark{
+    from{
+        width: 8rem;
+        height: 8rem;
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+    }
+    15%{
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+        width: 6rem;
+        height:6rem;
+    }
+    25% {
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+        width: 4rem;
+        height:4rem;}
+    
+    35%{
+        background: #444;
+        width: 2rem;
+        height:2rem;}
+    55% {
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+        width: 4rem;
+        height:4rem;} 
+    75%{
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+        width: 6rem;
+        height:6rem;
+    }    
+    to {
+        height: 8rem;
+        width:8rem;
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+    }    
+}
+@keyframes ballWhite{
+    from{
+        width: 8rem;
+        height: 8rem;
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+    }
+    15%{
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+        width: 6rem;
+        height:6rem;
+    }
+    25% {
+        background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+        width: 4rem;
+        height:4rem;}
+    
+    35%{
+        background: #fff;
+        width: 2rem;
+        height:2rem;}
+    55% {
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+        width: 4rem;
+        height:4rem;} 
+    75%{
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+        width: 6rem;
+        height:6rem;
+    }    
+    to {
+        height: 8rem;
+        width:8rem;
+        background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+    }  
+}
+@keyframes fromNowhere{
+    from{
+        
+        top:-100%;
+        z-index: 0;
+    }
+    50% {
+        top:+5%;
+        z-index: 2;
+    }
+    to{
+        top: 0;
+        z-index: 2;
+    }
+}
+
+                                    /* optional animations   */
+
+@keyframes buttonFall1{
+    from { 
+        position: absolute;
+           top: +200%;
+           z-index: 0;
+    }
+    50%{
+        top: +120%;
+    }
+    to{
+        top:0
+    }
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+html{
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.phone-body{
+    position: relative;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s;
+}
+.phone-body.active{
+    background-color: #444;
+}
+
+.big-circle{
+    width: 60rem;
+    height: 60rem;
+    border-radius: 100%;
+    background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -60%)
+}
+.big-circle.active{
+    background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+}
+.phone{
+    width: 18rem;
+    height: 38rem;
+    position: relative;
+    z-index: 2;
+    background-color: inherit;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    color:rgb(194, 194, 194) ;
+    display: flex;
+    flex-direction: column;
+    animation: fromNowhere 1s ease-in-out;
+}
+.phone.active{
+    color:rgb(49, 49, 49);
+}
+
+.menu{
+
+    opacity: 0.4;
+    padding: 0.8rem 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time{
+    font-size: 14px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    transform: translateY(5%);
+}
+
+.sessionDone{
+    visibility: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    background: rgb(194, 194, 194);
+    color: #fff;
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 20px;
+    
+}
+.img-coffe{
+    margin-top: 10px;
+    width: 47px;
+    height: 64px;
+}
+.sessionDone.active{
+    visibility: visible;
+}
+
+.circle{
+    position: relative;
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(40deg, #1e7883,#a9bdbb, #ee7256 70%);
+    margin: auto;
+    animation: ballWhite 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.circle.active{
+    background: linear-gradient(40deg,#94bbe9,#eeaeca,#5393db 70%);
+    animation: ballDark 0.5s ease-in-out;
+    color: #444;
+}
+.timer{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seconds{
+    padding-left: 5px;
+}
+.timer-line{
+    padding-bottom:10px;
+    padding-left: 5px;
+}
+p{
+    font-size: 80%;
+    font-weight: bolder;
+    margin: 3rem 0 .2rem 0;
+}
+
+#toggle{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 100px;
+    background: rgb(194, 194, 194);
+    transition: 0.5s;
+    cursor: pointer;  
+}
+#toggle.active{
+    background: rgb(49, 49, 49);
+}
+#toggle .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:25px;
+    height: 25px;
+    background: linear-gradient(#fff,rgb(194, 194, 194));
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+#toggle.active .indicator{
+    background: linear-gradient(rgb(139, 139, 139),rgb(49, 49, 49));
+    left: 25px;
+}
+.phone-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    background: rgb(194, 194, 194);
+    border-radius:30px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;   
+}
+.button:hover{
+    background: rgb(180, 180, 180);
+}
+.button.active{
+    background:rgb(49, 49, 49);
+    border-color: #a9bdbb;
+    color: rgb(139, 139, 139);
+}
+.button.active:hover{
+    background: rgb(30, 30, 30);
+}
+.start-button.active{
+    animation: buttonFall1 0.3s ease-in-out;
+}
+.pause-button.active{
+    animation: buttonFall1 0.8s ease-in-out;
+}
+.restart-button.active{
+    animation: buttonFall1 0.5s ease-in-out;
+}
+.next-button.active{
+    animation: buttonFall1 1s ease-in-out;
+}
+
+
+.js-class{
+    color:rgb(139, 139, 139);
+    background: rgb(49, 49, 49);
+}
+
+
+
+  
